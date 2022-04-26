@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 4fc9f5bc5faba92b336938ebb798c77cb142f540
 import json
 from flask import (Blueprint, render_template)
 
@@ -14,9 +10,4 @@ pets = json.load(open('pets.json'))
 
 @bp.route('/')
 def index():
-<<<<<<< HEAD
     return render_template('pets/index.html', pets=pets)
-=======
-    return render_template('./pets/index.html', pets=pets)
-
->>>>>>> 4fc9f5bc5faba92b336938ebb798c77cb142f540
