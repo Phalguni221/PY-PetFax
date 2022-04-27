@@ -13,8 +13,8 @@
     <div class="container">
         <H1>UserFax</H1>
         {% for fact in facts %}
-        <H4>Submitted by {{ fact.submitter }}</H4>
-        {{ fact.fact }}
+        <H4>Submitted by {{ facts.submitter }}</H4>
+        {{ facts.fact }}
         {% endfor %}
     </div>
 </body>
