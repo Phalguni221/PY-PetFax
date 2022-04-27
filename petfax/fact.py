@@ -4,7 +4,7 @@ from . import models
 
 bp = Blueprint('fact', __name__, url_prefix="/facts")
 
-@bp.route('/index', methods=['GET', 'POST'])
+@bp.route('/', methods=['GET', 'POST'])
 def index(): 
     if request.method == 'POST':
         submitter = request.form['submitter']
@@ -20,7 +20,7 @@ def index():
     for result in results:
        print(results)
 
-    return render_template('facts/index.html', facts=results)
+    return render_template('/facts/index.html', facts=results)
 
 @bp.route('/new')
 def new(): 
